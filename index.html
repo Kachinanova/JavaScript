@@ -4,13 +4,14 @@
 <head>
 <!-- WhosIts and WhatsIts
 Author: Katrina Ward
-Date: 09/05/2017 -->
+Date: 09/16/2017 -->
 
 <title>WhotsIts and WhatsIts</title>
 <meta charset="utf-8">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="whositsandwhatsits.css">
+<link rel="stylesheet" href="calculator.css">
 <script src="modernizr.custom.05819.js">
 </script>
 <!-- [if lt IE 9]>
@@ -48,6 +49,41 @@ Date: 09/05/2017 -->
 			<p>I'm a 29 year-old wife and artist living in the desert of Arizona. I am a jack-of-trades in the art community, having tried my hand in both traditional and digital arts, animation, jewelery, wood carving, and furniture making.</p>
 			<p>My passion (and sometimes obsession) burns brightest during the concept and design stages. Simply tell me what it is you're imaging and I'll bring it to life in the medium of your choice.</p>
 			
+			<br>
+			
+			<h1>Testing Ground for new projects</h1>
+			<br><br>
+			<h2>Basic Calculator</h2>
+			
+		<!-- I used a walkthrough to make the calculator. The code is modified from: http://thecodeplayer.com/walkthrough/javascript-css3-calculator -->
+			<div id="calculator">
+				<!-- Calc screen -->
+				<div class="top">
+					<div class="screen"></div>
+				</div>
+				
+				<div class="keys">
+					<!-- Calc buttons -->
+					<span class="clear">C</span>
+					<span class="operator" id="divi">÷</span>
+					<span class="operator">x</span>
+					<span>7</span>
+					<span>8</span>
+					<span>9</span>
+					<span class="operator">-</span>
+					<span>4</span>
+					<span>5</span>
+					<span>6</span>
+					<span class="operator">+</span>
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+					<span class="eval">=</span>
+					<span id="zero">0</span>
+					<span>.</span>
+				</div>
+			</div>
+			
 		</main>
 
 <!-- Copyright info -->
@@ -55,6 +91,7 @@ Date: 09/05/2017 -->
 			Copyright &copy; 2017 Katrina Ward
 		</footer>
 	</div>
+	<script src="calculator.js"></script>
 	
 </body>
 </html>

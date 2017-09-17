@@ -1,0 +1,135 @@
+/*
+WhosIts and WhatsIts
+Author: Katrina Ward
+Date: 09/16/2017
+*/
+
+
+/* I used a walkthrough to make this. The code is modified from: http://thecodeplayer.com/walkthrough/javascript-css3-calculator */
+
+
+/* Cyan to Drk Magenta gradient, sizing, rounding edges */
+#calculator {
+	width: 263px;
+	height: auto;
+	margin: 100px auto;
+	padding: 20px 20px 9px;
+	background: #43c6db;
+	background: linear-gradient(#43c6db, #ff00ff);
+	border-radius: 5px;
+}
+
+/* Creates text screen with indent shadow */
+.top .screen {
+	height: 50px;
+	width: 222px;
+	float: center;
+	padding: 0 10px;
+	margin-bottom: 20px;
+	background: rgba(30, 0, 0, 0.35);
+	border-radius: 3px;
+	box-shadow: inset 0px 2px rgba(0, 0, 0, 0.2);
+	
+	/* Text Type */
+	font-size: 18px;
+	line-height: 50px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+/* Clears float */
+.keys, .top {overflow: hidden;}
+
+/* Applys spacing/sizing to keys,custom cursor, light-grey text */
+.keys span, .top span.clear {
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	width: 50px;
+	height: 36px;
+	background: #374350;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+	margin: 0 7px 11px 0;
+	color: #d8d8d8;
+	line-height: 36px;
+	text-align: center;
+	
+	/* Prevent text selection on keys */
+	user-select: none;
+	
+	/* Smooths transistion between hover & active */
+	transition: all 0.3s ease;
+}
+
+/* Widens the "0" key */
+#zero	{ 
+	width: 107px;
+}
+
+/* Applies dark blue/grey color */
+.keys span.operator {
+	background: #212f3d;
+	margin-right: 0;
+}
+
+/* Adds missing padding to divide button */
+#divi	{
+	margin-right: 7px;
+}
+
+/* Heightens "=" button, cyan color, aligns with other buttons */
+.keys span.eval {
+	height: 83px;
+	float: right;
+	background: #b3dfe0;
+	box-shadow: 0px 4px #739494;
+	color: black; 
+	margin-right: 2px;
+}
+
+/* Widens the "c" button, Lt Magenta color, */
+.keys span.clear {
+	width: 107px;
+	background: #ff99ff;
+	box-shadow: 0px 4px #946d94;
+	color: white;
+}
+
+/* Changes color upon hover */
+.keys span:hover {
+	background: rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.keys span.eval:hover {
+	background: #0dbab1;
+	box-shadow: 0px 4px #0a8a84;
+	color: black;
+}
+
+.keys span.clear:hover {
+	background: #b975b8;
+	box-shadow: 0px 4px #d3545d;
+	color: white;
+}
+
+/* Remove shadow, shorten buttons when pressed */
+.keys span:active {
+	box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+
+.keys span.eval:active {
+	box-shadow: 0px 0px #717a33;
+	top: 4px;
+}
+
+.top span.clear:active {
+	top: 4px;
+	box-shadow: 0px 0px #d3545d;
+}
