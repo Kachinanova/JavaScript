@@ -1,0 +1,48 @@
+/*
+WhosIts and WhatsIts
+Author: Katinra Ward
+Date: 9/22/2017
+*/
+
+
+table	{
+	background: linear-gradient(#374350, #212f3d);
+	width: 80%;
+	border: 5px double #42c6cb;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: auto;
+}
+
+thead	{
+	background: linear-gradient(#374350, #212f3d);
+}
+
+th	{
+	color: #ff00ff;
+	font-size: 1.2em;
+	border: 1px dotted #42c6cb;
+	height: 50px;
+}
+
+td	{
+	border: 1px dotted #42c6cb;
+	width: 14.28%;
+	padding: 0;
+	position: relative;
+}
+
+td p:first-of-type	{
+	font-weight: 900;
+	border: 1px solid white;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	padding: 1px 5px;
+}
+
+td p	{
+	font-size: 1em;
+	text-align: center;
+}
