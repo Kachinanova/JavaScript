@@ -55,7 +55,7 @@ function addPlanInfo()	{
 }
 
 
-/* Adds time/distance to the third p element*/
+/* Adds home/park icon to the third p element*/
 function addTimeDistance()	{
 	var paragraphs = "";
 	for (var i = 0; i < 28; i++)	{
@@ -65,10 +65,12 @@ function addTimeDistance()	{
 		
 		switch (inOutDoor[i])	{
 			case "indoor":
-				paragraphs[2].innerHTML = "(Home)";
+				paragraphs[2].innerHTML = "<img src='images/houseicon.png' alt='House Icon'>";
+				/* Used via creative commons. From http://www.iconsdb.com/purple-icons/home-4-icon.html */
 				break;
 			case "outdoor":
-				paragraphs[2].innerHTML = "(Park)";
+				paragraphs[2].innerHTML = "<img src='images/treeicon.png' atl='Tree Icon'>";
+				/* Used via creative commons. From http://www.iconsdb.com/purple-icons/deciduous-tree-icon.html */
 				break;
 		}
 	}
