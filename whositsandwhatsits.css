@@ -47,9 +47,9 @@ a:visited	{ color: #43c6db; }
 a:hover	{ color: #808080; }
 
 /* removes bullets and makes horizontal. */
-ul		{ list-style-type: none; 
+nav ul		{ list-style-type: none; 
 		  margin: auto; }
-li		{ display: inline; }
+nav li		{ display: inline; }
 
 /* Dark magenta, spacing above text. */
 h1	{ color: #ff00ff; 
