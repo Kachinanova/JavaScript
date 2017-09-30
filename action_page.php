@@ -39,27 +39,27 @@
 
 		<main>
 <!-- Simple contact form with inputs and list boxes -->
-			<h1>Contact Me</h1>
-			<p>Feel free to contact me with any questions about available products.
-			<br>
-			(This form doesn't actually submit anything for the moment.)
+			<h1>Thank You.</h1>
+			<p>
+				Hello <?php echo $_POST["myFName"]; ?> <?php echo $_POST["myLName"]; ?>.
+				<br><br>
+				Your Email: <?php echo $_POST["myEmail"]; ?>
+				<br><br>
+				Your Comments:
+				<br>
+				<?php echo $_POST["myComments"]; ?>
 			</p>
 			
-			<form name="contact" action="action_page.php" onsubmit="validateForm(); return false;" method="post">
-				<label for="myFName">* First Name:</label>
-				<input type="text" name="myFName" id="myFName">
-				<label for="myLName">* Last Name:</label>
-				<input type="text" name="myLName" id="myLName">
-				<label for="myEmail">* E-mail:</label>
-				<input type="email" name="myEmail" id="myEmail">
-				<label for="myComments">* Comments:</label><br>
-				<textarea name="myComments" id="myComments" rows="10" cols="40"></textarea>
-				<p id="fNErrorMsg"></p>
-				<p id="lNErrorMsg"></p>
-				<p id="emErrorMsg"></p>
-				<p id="comErrorMsg"></p>
-				<input type="submit" id="mySubmit" value="Submit">
+			<br><br>
+			<p>(Not sure if this page is working properly. Will try to fix down the road.)
+			</p>
+			
+			<br><br>
+			
+			<form action="#">
+				<input type="button" value = "Back" onclick="javascript:history.go(-1)" />
 			</form>
+
 			
 		</main>
 
@@ -69,7 +69,6 @@
 		</footer>
 	</div>
 	
-	<script src="form.js"></script>
 	
 </body>
 </html>
