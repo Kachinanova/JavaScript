@@ -1,0 +1,33 @@
+/*
+WhosIts and WhatsIts
+Author: Katrina Ward
+Date: 10/28/2017
+*/
+
+
+div#cal	{
+	display: none;  /* ADD MOBILE CALENDAR! */
+	width: 60%;
+	height: 400px;
+	margin: auto;
+}
+
+div#prev	{
+	float: left;
+}
+
+div#next	{
+	float: right;
+}
+
+table#calBody	{
+	clear: both;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+p#close	{
+	float: right;
+}
+
