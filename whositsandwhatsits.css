@@ -1,7 +1,7 @@
 /*
 WhosIts and WhatsIts
 Author: Katrina Ward
-Date: 09/05/2017
+Date: 11/03/2017
 */
 
 /* ... */
@@ -65,14 +65,36 @@ p	{ font-size:1.2em; }
 /* Aligns text and box inputs, adds spacing, turqiose border on inputs and submit button */
 form	{ padding: 1em; }
 
+fieldset	{
+	border: none;
+}
+
+legend	{
+	font-size: 1.2em;
+	padding-bottom: 10px;
+}
+
 label	{ float: left; 
 		  display: block; 
 		  width: 8em; 
 		  padding-right: 1em; }
 		  
+label.survLabel	{
+	width: 200px;
+}
+		  
+		  
 input, select, textarea {  display: block;
+				  position: relative;
 				  border: 1px solid #90c7e3; 
 				  margin-bottom: 1em; }
+				  
+#movieBox, #bookBox, #gameBox,
+ #craftBox, #sportBox	{
+	clear: left;
+	float: left;
+	margin-bottom: 5px;
+}
 
 #mySubmit	{ font-family: Georgia, serif;
 			  background-color: #ffffff;

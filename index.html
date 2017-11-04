@@ -4,7 +4,7 @@
 <head>
 <!-- WhosIts and WhatsIts
 Author: Katrina Ward
-Date: 10/28/2017 -->
+Date: 11/03/2017 -->
 
 
 <title>WhotsIts and WhatsIts</title>
@@ -13,11 +13,9 @@ Date: 10/28/2017 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="whositsandwhatsits.css">
-<link rel="stylesheet" href="calendar.css">
-<link rel="stylesheet" href="popcalendar.css">
 
 <script src="modernizr.custom.05819.js"></script>
-<script src="popcalendar.js"></script>
+<script src="survey.js"></script>
 
 
 <!-- [if lt IE 9]>
@@ -67,90 +65,41 @@ Date: 10/28/2017 -->
 			
 			<br><br>
 			
-			<h2>Time Calculator</h2>
-			<p>Curious how much time has or will pass? Select a date below to find out.</p>
-			<p id="elapTime"></p>
+			<h2>Quick Survey</h2>
+			<p>Please take a moment to fill out this creative and super original survey!</p>
 			
 			<br>
-		
-
-			<label for="pickDate">Pick a date</label>
-			<input id="pickDate" type="text">
 			
-			
-		<!-- The following table is copy/pasted from the book tutorial project file. -->
-			<div id="cal">
-				<div id="prev">&lt; previous</div>
-				<div id="next">next &gt;</div>
-				<table id="calBody">
-					<caption></caption>
-					<tr>
-					   <th>Sun</th>
-					   <th>Mon</th>
-					   <th>Tue</th>
-					   <th>Wed</th>
-					   <th>Thu</th>
-					   <th>Fri</th>
-					   <th>Sat</th>
-					</tr>
-					<tr>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					</tr>
-					<tr>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					</tr>
-					<tr>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					</tr>
-					<tr>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					</tr>
-					<tr>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					</tr>
-					<tr>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					   <td></td>
-					</tr>
-				</table>
-				<p id="close">close <span>&#9746;</span></p>
+			<div id="survRight">
+				<ul id="survList"></ul>
+				
 			</div>
-		<!-- End copy/paste. -->
+			
+			<form>
+				<fieldset>
+					<legend>What is your preferred way to pass the time?</legend>
+
+					<input name="passTime" id="movieBox" type="checkbox" value="TV and Movies">
+					<label for="moviesBox" class="survLabel">TV and Movies</label><br>
+					
+					<input name="passTime" id="bookBox" type="checkbox" value="Books">
+					<label for="bookBox" class="survLabel">Books or Audio Books</label>
+					
+					<input name="passTime" id="gameBox" type="checkbox" value="Video Games">
+					<label for="gameBox" class="survLabel">Video Games</label>
+					
+					<input name="passTime" id="craftBox" type="checkbox" value="Crafty Hobbies">
+					<label for="craftBox" class="survLabel">Crafty Hobbies</label>
+					
+					<input name="passTime" id="sportBox" type="checkbox" value="Sports or Physical Activities">
+					<label for="sportBox" class="survLabel">Sports or Physical Activites</label>
+					
+				</fieldset>
+				
+				<input id="submit" type="button" value="Submit">
+			
+			</form>
+			
 			
 			
 			

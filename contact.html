@@ -5,15 +5,16 @@
 	<!-- 
 		WhotsIts and WhatsIts
 		Author: Katrina Ward
-		Date: 09/05/2017
+		Date: 11/03/2017
 	-->
 <title>WhotsIts and WhatsIts</title>
 <meta charset="utf-8">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="whositsandwhatsits.css">
-<script src="modernizr.custom.05819.js">
-</script>
+<script src="modernizr.custom.05819.js"></script>
+<script src="form.js"></script>
+
 <!-- [if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
@@ -42,28 +43,32 @@
 			<h1>Contact Me</h1>
 			<p>Feel free to contact me with any questions about available products.
 			<br>
-			
-			<!--
-			I used if, catch, and finally statements to validate the contact form. When the user clicks the submit button it will run each fields validation function to make sure a) it is not empty and b) it does not contain any invalid symbols. If it does, the catch statement will place the error code onto the page. If it is clear, the finally statement will allow the code to continue and submit the form.
-			-->
-
-			
 			(This form doesn't actually submit anything for the moment.)
 			</p>
 			
 			<form name="contact" action="action_page.php" onsubmit="validateForm(); return false;" method="post">
 				<label for="myFName">* First Name:</label>
 				<input type="text" name="myFName" id="myFName">
+				
 				<label for="myLName">* Last Name:</label>
 				<input type="text" name="myLName" id="myLName">
+				
 				<label for="myEmail">* E-mail:</label>
 				<input type="email" name="myEmail" id="myEmail">
+				
+				<label for=""></label>
+				
+				<label for=""></label>
+				
+				
 				<label for="myComments">* Comments:</label><br>
 				<textarea name="myComments" id="myComments" rows="10" cols="40"></textarea>
+				
 				<p id="fNErrorMsg"></p>
 				<p id="lNErrorMsg"></p>
 				<p id="emErrorMsg"></p>
 				<p id="comErrorMsg"></p>
+				
 				<input type="submit" id="mySubmit" value="Submit">
 			</form>
 			
@@ -74,8 +79,6 @@
 			Copyright &copy; 2017 Katrina Ward
 		</footer>
 	</div>
-	
-	<script src="form.js"></script>
 	
 </body>
 </html>
