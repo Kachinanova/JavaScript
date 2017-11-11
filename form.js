@@ -99,13 +99,18 @@ function validateEmail() {
 /* Checks comments field for correct input, gives error if not */
 function validateComments() {
 	var comments = document.getElementById("myComments");
+	var isChara = /[@*+\<>=^_`{|}~]/;
 	var valid = true;
 	var myCommentsError = "";
 	try {
 		if(comments.value == "") {
 			throw "Please enter your comments.";
 			return false;
-		}
+		} else if(isChara.test(comments.value)) {
+			 throw "Only letters, numbers and these characters <br>\
+					( # $ % & / : ; - ) are allowed."
+			 return false;
+		 }
 	}
 	catch(message) {
 		valid = false;

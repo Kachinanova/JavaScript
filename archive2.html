@@ -17,6 +17,7 @@ Date: 11/03/2017 -->
 
 <script src="modernizr.custom.05819.js"></script>
 <script src="popcalendar.js"></script>
+<script src="survey.js"></script>
 
 
 
@@ -50,6 +51,7 @@ Date: 11/03/2017 -->
 			<li><a href="archive.html">Archives page 1</a></li>
 				<li><a href="#ch7">Chapter 7 - Time Past/Left Calculator</a></li>
 				<li><a href="#ch8">Chapter 8 - Quick Survey</a></li>
+				<li><a href="#ch9">Chapter 9 - Form Validation</a></li>
 				
 			</ol>
 			
@@ -146,7 +148,40 @@ Date: 11/03/2017 -->
 			<h2><a name="ch8">Quick Survey</a></h2>
 			<p>Chapter 8: Please take a moment to fill out this creative and super original survey! ;)</p>
 			
+			<div id="survRight">
+				<ul id="survList"></ul>
+				
+			</div>
+			
+			<form>
+				<fieldset>
+					<legend>What is your preferred way to pass the time?</legend>
+
+					<input name="passTime" id="movieBox" type="checkbox" value="TV and Movies">
+					<label for="moviesBox" class="survLabel">TV and Movies</label><br>
+					
+					<input name="passTime" id="bookBox" type="checkbox" value="Books">
+					<label for="bookBox" class="survLabel">Books or Audio Books</label>
+					
+					<input name="passTime" id="gameBox" type="checkbox" value="Video Games">
+					<label for="gameBox" class="survLabel">Video Games</label>
+					
+					<input name="passTime" id="craftBox" type="checkbox" value="Crafty Hobbies">
+					<label for="craftBox" class="survLabel">Crafty Hobbies</label>
+					
+					<input name="passTime" id="sportBox" type="checkbox" value="Sports or Physical Activities">
+					<label for="sportBox" class="survLabel">Sports or Physical Activites</label>
+					
+				</fieldset>
+				
+				<input id="submit" type="button" value="Submit">
+			
+			</form>
+			
 			<br><br>
+			
+			<h2><a name="ch9">Form Security</a></h2>
+			<p>Further securing the <a href="contact.html">conact</a> form.</p>
 			
 		</main>
 
