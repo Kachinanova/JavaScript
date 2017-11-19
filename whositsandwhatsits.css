@@ -10,11 +10,11 @@ Date: 11/19/2017
 header, nav, main, footer { display: block; }
 
 body	{ background-color: #212f3d; 
-		  height: 100%;
 		  margin: 0;
 		  padding: 0; 
 		  color: #fefcff; 
-		  font-family: "Time New Roman", serif; }
+		  font-family: "Time New Roman", serif;
+height: 100%;		  }
 
 /* Large, pink text w/o link changes */
 header	{ color: #ff00ff; 
