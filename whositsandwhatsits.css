@@ -1,7 +1,7 @@
 /*
 WhosIts and WhatsIts
 Author: Katrina Ward
-Date: 11/03/2017
+Date: 11/19/2017
 */
 
 /* ... */
@@ -128,6 +128,11 @@ footer	{ font-size: .70em;
 			  border-left: 1px dotted #42c6cb; 
 			  border-right: 1px dotted #42c6cb; 
 			  padding: 14px 5px; }
+			  
+#map	{
+	width: 500px;
+	height: 400px;
+}
 
 /* Restrains page to 80% of window. */
 #wrapper	{ width: 90%; min-width: 700px; max-width: 1024px; 
