@@ -4,7 +4,7 @@
 <head>
 <!-- WhosIts and WhatsIts
 Author: Katrina Ward
-Date: 11/03/2017 -->
+Date: 11/18/2017 -->
 
 
 <title>WhotsIts and WhatsIts</title>
@@ -15,7 +15,8 @@ Date: 11/03/2017 -->
 <link rel="stylesheet" href="whositsandwhatsits.css">
 
 <script src="modernizr.custom.05819.js"></script>
-<script src="survey.js"></script>
+<script src="location.js" defer></script>
+
 
 
 <!-- [if lt IE 9]>
@@ -48,15 +49,15 @@ Date: 11/03/2017 -->
 			<p>Hello and welcome to my site. I have no real need for a web page so I decided to make a "for fun" page for this class. For the moment I’ll just place simple things like a few hobbies and perhaps a bucket list.
 			</p>
 			
-			<img id="desktop" alt="Photo of Artist" src="images/katrinaward.jpg">
-			<img id="mobile" alt="Photo of Artist" src="images/katrinawardsm.jpg">
+			<img id="desktop" alt="Photo of Artist for desktop" src="images/katrinaward.jpg">
+			<img id="mobile" alt="Photo of Artist for mobile" src="images/katrinawardsm.jpg">
 				
 			<br>
 			
 			<p>I'm a 29 year-old wife and artist living in the desert of Arizona. I am a jack-of-trades in the art community, having tried my hand in both traditional and digital arts, animation, jewelery, wood carving, and furniture making.
 			</p>
 			
-			<p>My passion (and sometimes obsession) burns brightest during the concept and design stages. Simply tell me what it is you're imaging and I'll bring it to life in the medium of your choice.
+			<p>My passion (and sometimes obsession) burns brightest during the concept and design stages. Simply tell me what it is you're imagining and I'll bring it to life in the medium of your choice.
 			</p>
 			
 			<br>
@@ -65,15 +66,20 @@ Date: 11/03/2017 -->
 			
 			<br><br>
 			
-			<h2>Form Security</h2>
-			<p>Chapter9 can be found on the contact page.</p>
+			<h2>Your Location</h2>
+			<p></p>
+			
+			<table>
+				<tr>
+					<td id="lat"></td>
+					<td id="lon"></td>
+					<td id="alt"></td>
+				</tr>
+			</table>
 			
 			<br>
 			
-			
-			
-			
-			
+			<div id="map"></div>
 			
 			<br><br>
 			
