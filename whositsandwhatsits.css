@@ -1,7 +1,7 @@
 /*
 WhosIts and WhatsIts
 Author: Katrina Ward
-Date: 11/19/2017
+Date: 11/29/2017
 */
 
 /* ... */
@@ -9,16 +9,12 @@ Date: 11/19/2017
 /* Compatability with older browsers. */
 header, nav, main, footer { display: block; }
 
-html	{ height: 100%;
-}
-
 body	{ background-color: #212f3d; 
 		  margin: 0;
 		  padding: 0; 
 		  color: #fefcff; 
 		  font-family: "Time New Roman", serif;
-		  height: 100%;
-}
+height: 100%;		  }
 
 /* Large, pink text w/o link changes */
 header	{ color: #ff00ff; 
@@ -137,6 +133,10 @@ footer	{ font-size: .70em;
 #map	{
 	width: 500px;
 	height: 400px;
+}
+
+#lat2, #lon2, #alt2, #err	{
+	display: none;
 }
 
 /* Restrains page to 80% of window. */
